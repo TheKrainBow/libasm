@@ -2,6 +2,7 @@ SRCS			=	srcs/ft_strlen.s			\
 					srcs/ft_write.s				\
 					srcs/ft_strcpy.s			\
 					srcs/ft_strcmp.s			\
+					srcs/ft_strdup.s			\
 
 OBJS			=	$(SRCS:.s=.o)
 
@@ -9,8 +10,6 @@ ASM				=	nasm
 ASM_FLAG		=	-f elf64
 RM				=	@rm -f
 NAME			=	libasm.a
-
-FLAGS			=	-Wall -Werror -Wextra
 
 %.o: 				%.s
 					@$(ASM) $(ASM_FLAG) $<
