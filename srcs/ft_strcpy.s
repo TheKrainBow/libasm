@@ -2,6 +2,8 @@
 			global	ft_strcpy
 
 ft_strcpy:					; strcpy(dest, src) = strcpy(rdi, rsi)
+			cmp rsi, 0
+			je _end
 			mov rbx, 0		; i = 0;
 			sub rbx, 1
 
