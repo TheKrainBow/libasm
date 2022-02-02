@@ -3,8 +3,6 @@
 			extern	ft_strlen, malloc, ft_strcpy
 
 ft_strdup:				;ft_strdup(str) = ft_strdup(rdi)
-			cmp rdi, 0
-			je _failure
 			push rdi
 			call ft_strlen
 			pop rdi

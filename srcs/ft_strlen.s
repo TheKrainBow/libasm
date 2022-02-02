@@ -3,8 +3,8 @@
 
 ft_strlen:							; rdi = arg0 = str
 			xor rax, rax			; i = 0
-			cmp rdi, 0				; compare str with NULL
-			je end					; return if str == NULL
+			;cmp rdi, 0				; compare str with NULL
+			;je end					; return if str == NULL
 			sub rax, 1				; i--
 
 _loop:
